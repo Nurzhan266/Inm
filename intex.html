@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PLAY IS FOOTBALL</title>
+    <style>
+      /* ТОТАЛЬНЫЙ НЕОНОВЫЙ СТИЛЬ */
+      body { 
+        background: #000000; 
+        color: #ffffff; 
+        font-family: 'Segoe UI', Roboto, sans-serif; 
+        margin: 0; 
+        padding: 20px; 
+        text-align: center;
+      }
+      .container { max-width: 600px; margin: 0 auto; }
+      
+      /* Главная вывеска */
+      .header-box { 
+        margin-bottom: 40px; 
+        padding: 30px; 
+        border: 2px solid #00d2ff; 
+        border-radius: 20px;
+        box-shadow: 0 0 25px #00d2ff, inset 0 0 15px #00d2ff; 
+      }
+      .main-slogan {
+        font-size: 32px;
+        font-weight: 900;
+        color: #00f2fe;
+        text-shadow: 0 0 15px #00f2fe, 0 0 30px #00f2fe;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .quote { 
+        color: #ff00ff; 
+        font-weight: 900; 
+        font-size: 15px; 
+        text-shadow: 0 0 10px #ff00ff;
+        margin: 0; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      /* Заголовки разделов */
+      .section-title {
+        font-size: 26px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 50px 0 25px 0;
+        color: #fff;
+        text-shadow: 0 0 15px rgba(255,255,255,0.6);
+      }
+      
+      /* Стили карточек */
+      .club-card { 
+        background: #080808; 
+        border-radius: 25px; 
+        padding: 30px; 
+        margin-bottom: 35px; 
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .club-card:hover {
+        transform: translateY(-8px) scale(1.03);
+      }
+
+      .logo-img { height: 90px; filter: drop-shadow(0 0 12px rgba(255,255,255,0.2)); }
+      .player-img { width: 100%; height: 320px; object-fit: cover; border-radius: 18px; }
+      
+      h2 { margin: 15px 0 10px 0; font-size: 24px; text-transform: uppercase; letter-spacing: 1px; }
+      
+      .description {
+        color: #94a3b8;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 10px 0 20px 0;
+        padding: 0 10px;
+      }
+      
+      /* Кнопки */
+      .btn { 
+        display: block; 
+        background: #000; 
+        color: #fff; 
+        padding: 16px; 
+        border-radius: 15px; 
+        text-decoration: none; 
+        font-weight: bold; 
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      
+      <!-- ШАПКА С ТВОИМ СЛОГАНОМ -->
+      <div class="header-box">
+        <div class="main-slogan">МЫ УЛУЧШИМ ВАШУ ИГРУ</div>
+        <p class="quote">«...Мы идем сюда, чтобы доминировать» — Луис Энрике</p>
+      </div>
+
+
+      <!-- РАЗДЕЛ 1: КЛУБЫ (ВСЕ 7 ШТУК) -->
+      <div class="section-title">◢ ТОП КЛУБЫ ЕВРОПЫ</div>
+
+      <!-- Ман Сити -->
+      <div class="club-card" style="border: 2px solid #00d2ff; box-shadow: 0 0 15px #00d2ff;">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg">
+        <h2 style="color: #00d2ff; text-shadow: 0 0 10px #00d2ff;">Manchester City</h2>
+        <p class="description">Самый доминирующий клуб Англии последних лет. Машина Хосепа Гвардиолы, построенная на идеальном контроле мяча, безумном прессинге и тотальной тактической гибкости.</p>
+        <a href="https://www.tiktok.com/@mancity" target="_blank" class="btn" style="border: 2px solid #00d2ff;" onmouseover="this.style.background='#00d2ff'; this.style.color='#000'" onmouseout="this.style.background='#000'; this.style.color='#fff'">TikTok Клуба</a>
+      </div>
+
+      <!-- ПСЖ -->
+      <div class="club-card" style="border: 2px solid #ff0055; box-shadow: 0 0 15px #ff0055;">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg">
+        <h2 style="color: #ff0055; text-shadow: 0 0 10px #ff0055;">PSG</h2>
+        <p class="description">Парижский гранд, сочетающий в себе французский шарм и бешеную атакующую мощь. Место, где Луис Энрике ставит свой яркий, атакующий и бескомпромиссный футбол.</p>
+        <a href="https://www.tiktok.com/@psg" target="_blank" class="btn" style="border: 2px solid #ff0055;" onmouseover="this.style.background='#ff0055'; this.style.color='#000'" onmouseout="this.style.background='#000'; this.style.color='#fff'">TikTok Клуба</a>
+      </div>
+
+      <!-- Барселона -->
+      <div class="club-card" style="border: 2px solid #a50044; box-shadow: 0 0 15px #a50044;">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg">
+        <h2 style="color: #a50044; text-shadow: 0 0 10px #a50044;">FC Barcelona</h2>
+        <p class="description">Легендарный каталонский клуб со своей уникальной философией «больше, чем клуб». Олицетворение стиля тика-така, опирающееся на таланты академии Ла Масия.</p>
+        <a href="https://www.tiktok.com/@fcbarcelona" target="_blank" class="btn" style="border: 2px solid #a50044;" onmouseover="this.style.background='#a50044'; this.style.color='#fff'" onmouseout="this.style.background='#000'; this.style.color='#fff'">TikTok Клуба</a>
+      </div>
+
+      <!-- Реал Мадрид -->
+      <div class="club-card" style="border: 2px solid #ffffff; box-shadow: 0 0 15px rgba(255,255,255,0.4);">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg">
+        <h2 style="color: #ffffff; text-shadow: 0 0 10px #ffffff;">Real Madrid</h2>
+        <p class="description">Королевский клуб и absolute-доминатор европейского футбола. Коллекционеры «ушастых» кубков Лиги Чемпионов и команда, для которой не существует авторитетов.</p>
+        <a href="https://www.tiktok.com/@realmadrid" target="_blank" class="btn" style="border: 2px solid #ffffff;" onmouseover="this.style.background='#ffffff'; this.style.color='#000'" onmouseout="this.style.background='#000'; this.style.color='#fff'">TikTok Клуба</a>
+      </div>
+
+      <!-- МЮ -->
+      <div class="club-card" style="border: 2px solid #da0812; box-shadow: 0 0 15px #da0812;">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg">
+        <h2 style="color: #da0812; text-shadow: 0 0 10px #da0812;">Manchester United</h2>
+        <p class="description">Легендарные «Красные дьяволы» с «Олд Траффорд». Клуб с величайшим историческим наследием, сумасшедшей базой фанатов по всему миру и вечным стремлением к вершине.</p>
+        <a href="https://www.tiktok.com/@manutd" target="_blank" class="btn" style="border: 2px solid #da0812;" onmouseover="this.style.background='#da0812'; this.style.color='#fff'" onmouseout="this.style.background='#000'; this.style.color='#fff'">TikTok Клуба</a>
+      </div>
+
+      <!-- Арсенал -->
+      <div class="club-card" style="border: 2px solid #ef4444; box-shadow: 0 0 15px #ef4444;">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg">
+        <h2 style="color: #ef4444; text-shadow: 0 0 10px #ef4444;">Arsenal FC</h2>
+        <p class="description">Лондонские «канониры», ставшие эталоном стильного, скоростного и эстетичного футбола. Команда, готовая бросить вызов любому сопернику за счёт драйва и характера.</p>
+        <a href="https://www.tiktok.com/@arsenal" target="_blank" class="btn" style="border: 2px solid #ef4444;" onmouseover="this.style.background='#ef4444'; this.style.color='#000'" onmouseout="this.style.background='#000'; this.style.color='#fff'">TikTok Клуба</a>
+      </div>
+
+      <!-- Милан -->
+      <div class="club-card" style="border: 2px solid #ff0000; box-shadow: 0 0 15px #ff0000;">
+        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg">
+        <h2 style="color: #ff0000; text-shadow: 0 0 10px #ff0000;">AC Milan</h2>
+        <p class="description">Один из самых титулованных грандов Италии и Европы. Великие «россонери», чей легендарный стадион «Сан-Сиро» помнит исторические победы и золотые эпохи футбола.</p>
+        <a href="https://www.tiktok.com/@acmilan" target="_blank" class="btn" style="border: 2px solid #ff0000;" onmouseover="this.style.background='#ff0000'; this.style.color='#000'" onmouseout="this.style.background='#000'; this.style.color='#fff'">TikTok Клуба</a>
+      </div>
+
+
+      <!-- РАЗДЕЛ 2: ПРОГРАММЫ ТРЕНИРОВОК -->
+      <div class="section-title">◢ ПРОГРАММА ТРЕНИРОВОК</div>
+
+      <!-- ВРАТАРСКАЯ -->
+      <div class="club-card" style="border: 2px solid #00ff66; box-shadow: 0 0 15px #00ff66;">
+        <img class="player-img" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Manuel_Neuer_2018.jpg](https://upload.wikimedia.org/wikipedia/commons/e/ec/Manuel_Neuer_2018.jpg" style="border: 1px solid #00ff66;">
+        <h2 style="color: #00ff66; text-shadow: 0 0 10px #00ff66;">Прокачка Вратарей</h2>
+        <p class="description">Развитие взрывной реакции, прыгучести и координации. Тренировка игры на выходах, фиксации мяча при жестких ударах и точных пасов ногами под прессингом.</p>
+        <a href="vrata.html" class="btn" style="border: 2px solid #00ff66; box-shadow: 0 0 10px #00ff66;" onmouseover="this.style.background='#00ff66'; this.style.color='#000';" onmouseout="this.style.background='#000'; this.style.color='#fff';">Начать тренировку</a>
+      </div>
+
+      <!-- ЗАЩИТА (ВАН ДЕЙК) -->
+      <div class="club-card" style="border: 2px solid #ff9900; box-shadow: 0 0 15px #ff9900;">
+        <img class="player-img" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Virgil_van_Dijk_2020.jpg](https://upload.wikimedia.org/wikipedia/commons/8/87/Virgil_van_Dijk_2020.jpg" style="border: 1px solid #ff9900;">
+        <h2 style="color: #ff9900; text-shadow: 0 0 10px #ff9900;">Оборонительный Рубеж (Van Dijk Style)</h2>
+        <p class="description">Прокачка тактического чтения игры, правильного выбора позиции и отбора без фола. Тренировка жестких чистых подкатов и доминирования на втором этаже, как лучший защитник мира.</p>
+        <a href="virgil.html" class="btn" style="border: 2px solid #ff9900; box-shadow: 0 0 10px #ff9900;" onmouseover="this.style.background='#ff9900'; this.style.color='#000';" onmouseout="this.style.background='#000'; this.style.color='#fff';">Начать тренировку</a>
+      </div>
+
+      <!-- ПОЛУЗАЩИТА (ДЕ БРЮЙНЕ) -->
+      <div class="club-card" style="border: 2px solid #00f2fe; box-shadow: 0 0 15px #00f2fe;">
+        <img class="player-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Kevin_De_Bruyne_2018.jpg](https://upload.wikimedia.org/wikipedia/commons/c/c5/Kevin_De_Bruyne_2018.jpg" style="border: 1px solid #00f2fe;">
+        <h2 style="color: #00f2fe; text-shadow: 0 0 10px #00f2fe;">Мастерство Контроля (De Bruyne Style)</h2>
+        <p class="description">Улучшение видения поля на 360 градусов. Развитие точности коротких и радиоуправляемых длинных передач, разворотов корпуса и быстрого выхода из-под жесткого прессинга в центре поля.</p>
+        <a href="kdb.html" class="btn" style="border: 2px solid #00f2fe; box-shadow: 0 0 10px #00f2fe;" onmouseover="this.style.background='#00f2fe'; this.style.color='#000';" onmouseout="this.style.background='#000'; this.style.color='#fff';">Начать тренировку</a>
+      </div>
+
+      <!-- ПОЛУЗАЩИТА (ПЕДРИ) -->
+      <div class="club-card" style="border: 2px solid #facc15; box-shadow: 0 0 15px #facc15;">
+        <img class="player-img" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pedri_2022.jpg](https://upload.wikimedia.org/wikipedia/commons/9/91/Pedri_2022.jpg" style="border: 1px solid #facc15;">
+        <h2 style="color: #facc15; text-shadow: 0 0 10px #facc15;">Магия Дриблинга (Pedri Style)</h2>
+        <p class="description">Космический интеллект на поле. Развитие контроля мяча на носовом платке, резких разворотов, скрытых передач и идеального понимания темпа игры.</p>
+        <a href="pedri.html" class="btn" style="border: 2px solid #facc15; box-shadow: 0 0 10px #facc15;" onmouseover="this.style.background='#facc15'; this.style.color='#000';" onmouseout="this.style.background='#000'; this.style.color='#fff';">Начать тренировку</a>
+      </div>
+
+      <!-- АТАКА (ЭКИТИКЕ) -->
+      <div class="club-card" style="border: 2px solid #ff00ff; box-shadow: 0 0 15px #ff00ff;">
+        <img class="player-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Hugo_Ekitike_2022.jpg](https://upload.wikimedia.org/wikipedia/commons/d/d4/Hugo_Ekitike_2022.jpg" style="border: 1px solid #ff00ff;">
+        <h2 style="color: #ff00ff; text-shadow: 0 0 10px #ff00ff;">Реализация и Скорость (Ekitike Style)</h2>
+        <p class="description">Развитие бешеной стартовой скорости, резкого дриблинга 1 в 1 и хладнокровия при завершении моментов. Тренировка точных хлестких ударов в девятку на скорости.</p>
+        <a href="ekitike.html" class="btn" style="border: 2px solid #ff00ff; box-shadow: 0 0 10px #ff00ff;" onmouseover="this.style.background='#ff00ff'; this.style.color='#000';" onmouseout="this.style.background='#000'; this.style.color='#fff';">Начать тренировку</a>
+      </div>
+
+      <!-- АТАКА (ОЛИСЕ) -->
+      <div class="club-card" style="border: 2px solid #e11d48; box-shadow: 0 0 15px #e11d48;">
+        <img class="player-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Michael_Olise_2023.jpg" style="border: 1px solid #e11d48;">
+        <h2 style="color: #e11d48; text-shadow: 0 0 10px #e11d48;">Техничные Смещения (Olise Style)</h2>
+        <p class="description">Идеальные радиоуправляемые навесы со стандартов и фирменные резкие смещения с правого фланга в центр под удар. Прокачка непредсказуемости и техники топ-уровня.</p>
+        <a href="olise.html" class="btn" style="border: 2px solid #e11d48; box-shadow: 0 0 10px #e11d48;" onmouseover="this.style.background='#e11d48'; this.style.color='#000';" onmouseout="this.style.background='#000'; this.style.color='#fff';">Начать тренировку</a>
+      </div>
+
+    </div>
+  </body>
+</html>
